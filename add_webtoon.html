@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter un Webtoon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Ajouter un Webtoon</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="webtoons.html">Liste des Webtoons</a>
+    <a href="animes.html">Liste des Animes</a>
+    <a href="add_anime.html">Ajouter un Anime</a>
+  </nav>
+  <form id="addWebtoonForm">
+    <input type="text" id="webtoonName" placeholder="Nom du Webtoon" required>
+    <input type="text" id="webtoonImage" placeholder="URL de l'image" required>
+    <select id="webtoonStatus" required>
+      <option value="">Statut</option>
+      <option value="En cours">En cours</option>
+      <option value="Terminé">Terminé</option>
+      <option value="À voir">À voir</option>
+      <option value="Abandonné">Abandonné</option>
+    </select>
+    <input type="text" id="webtoonGenre" placeholder="Genre" required>
+    <input type="number" id="webtoonNote" placeholder="Note (sur 10)" min="0" max="10" required>
+    <button type="submit">Ajouter Webtoon</button>
+  </form>
+  <script src="add_webtoon.js"></script>
+</body>
+</html>
